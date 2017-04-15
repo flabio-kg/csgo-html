@@ -138,14 +138,6 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
-		
-
-
-		
-		
-
-
-
 	$('.js-hand').css({'transform' : 'rotate('+ (180+($('.js-rule-range input[type="range"]').val()*3.6)).toFixed() +'deg)'});
 	$('.js-rule-range input[type="range"]').rangeslider({
 		polyfill: false,
@@ -155,13 +147,17 @@ $(document).ready(function() {
 			$('.chart').data('easyPieChart').update(value);
 			$('.js-percent-res span, .-purchases').text(value+'%');
 			$('.js-rule-percent').text(value+'%');
-			$('.js-rule-price').text('$'+value/2);
+			var nn1 = value/2;
+			$('.js-rule-price').text(nn1.toFixed(3)+'$');
 				// $('.js-rule-price').text();
 				$('.js-hand').css({'transform' : 'rotate('+ (180+(value*3.6)).toFixed() +'deg)', 'transition-duration': '0s'});
 
 			}
 		});
 
+
+	var nnn = 4;
+	console.log(nnn.toFixed(2))
 
 	var $rangeslider = $('.js_range_slider');
 	var $amount = $('.-purchases');
@@ -173,7 +169,8 @@ $(document).ready(function() {
 			polyfill: false,
 			onSlide: function(position, value) {
 				$('.-range-id-'+index).parent().find(".-purchases").text(value+"%");
-				$('.-range-id-'+index).parent().find(".-price_slide").text("$"+value/2);
+				var nn1 = value/2;
+				$('.-range-id-'+index).parent().find(".-price_slide").text(nn1.toFixed(3)+"$");
 			}
 		});
 	});
