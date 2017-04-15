@@ -1,0 +1,94 @@
+.catalog {
+  background-color: #32344d;
+  width: 100%;
+  height: 100%; }
+  .catalog__items {
+    text-align: center; }
+  .catalog__item {
+    background-color: #343551;
+    border: 1px #47495f solid;
+    margin-bottom: 30px;
+    border-style: solid;
+    box-shadow: 0px 5px 2px 0px transparent;
+    transition: all .4s;
+    height: 400px; }
+    .catalog__item:hover {
+      box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.5); }
+    .catalog__item-head h3 {
+      font-size: 14px;
+      color: #e84e4c;
+      font-family: 'OpenSansRegular'; }
+    .catalog__item-head p {
+      font-size: 11px;
+      color: #c2bdb7;
+      font-family: 'OpenSansRegular'; }
+    .catalog__item-head .-white {
+      font-size: 14px;
+      color: #babddc;
+      font-family: 'OpenSansRegular'; }
+    .catalog__item-head .-aqua {
+      font-size: 11px;
+      color: #a7edf3;
+      font-family: 'OpenSansRegular'; }
+    .catalog__item-head .-blue {
+      font-size: 14px;
+      color: #4b65ff;
+      font-family: 'OpenSansRegular'; }
+    .catalog__item-head .-red {
+      font-size: 11px;
+      color: #ff6969;
+      font-family: 'OpenSansRegular'; }
+    .catalog__item-thumbnail {
+      padding-top: 25px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 150px; }
+      .catalog__item-thumbnail img {
+        max-width: 100%;
+        max-height: 100%; }
+    .catalog__item-cena {
+      padding-left: 15px;
+      padding-bottom: 15px; }
+      .catalog__item-cena p {
+        font-size: 11px;
+        color: #fff;
+        font-family: 'OpenSansRegular';
+        text-align: left;
+        margin: 0; }
+      .catalog__item-cena span {
+        font-size: 16px;
+        color: #ffa030;
+        font-family: 'OpenSansBold';
+        text-align: left;
+        display: block; }
+    .catalog__item-bottom {
+      background-color: #222234;
+      padding-top: 15px; }
+      .catalog__item-bottom span {
+        font-size: 14px;
+        color: #fff;
+        width: 35px;
+        text-align: center;
+        display: inline-block; }
+    .catalog__item-btn a, .catalog__item-btn button {
+      border: 1px #47495f solid;
+      border-radius: 2px;
+      background-color: #222234;
+      width: 145px;
+      height: 25px;
+      line-height: 22px;
+      outline: none;
+      font-size: 11px;
+      color: #fff;
+      font-family: 'OpenSansRegular';
+      margin-bottom: 20px;
+      display: inline-block;
+      text-decoration: none;
+      transition: all .4s; }
+      .catalog__item-btn a:hover, .catalog__item-btn button:hover {
+        background-color: #FB9733;
+        border: 1px #FB9733 solid;
+        color: #000; }
+  .catalog .js_range_slider {
+    margin-bottom: 10px;
+    padding: 15px; }

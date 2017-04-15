@@ -1,0 +1,75 @@
+.victory{
+	background-color: #2b2c44;
+	padding-bottom: 30px;
+	@media (max-width: $screen-md-max) {
+		padding-bottom: 0;
+	}
+	&__blog{
+		padding: 25px 15px 25px 0;
+		position: relative;
+		&:before{
+			content: '';
+			background-image: url('../images/polosa.png');
+			background-repeat: repeat-x;
+			background-position: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: .25;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+		h2{
+			margin: 0;
+			font-size: 15px;
+			color: #fff;
+			font-family: 'OpenSansBold';
+			background-color: #2b2c44;
+			width: 190px;
+			position: relative;
+		}
+	}
+	&__catalog{
+		text-align: center;
+	}
+	&__item{
+		background-color: #343551;
+		border: 1px #47495f solid;
+		padding-top: 10px;
+		padding-left: 0;
+		@media (max-width: $screen-md-max) {
+			margin-bottom: 30px;
+		}		
+		&-head{
+			h3{
+				font-size: 11px;
+				color: #e84e4c;
+				margin: 0;
+				font-family: 'OpenSansRegular';
+			}
+		}
+		&-thumbnail{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			height: 100px;
+			width: 100%;
+			img{
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		&-bottom{
+			p{
+				display: inline-block;
+				font-size: 14px;
+				color: #fff;
+				font-family: 'OpenSansRegular';
+				span{
+					color: #ff9230;
+				}
+			}
+		}
+	}
+}

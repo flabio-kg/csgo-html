@@ -1,0 +1,186 @@
+.about{
+	&__text{
+		position: relative;
+		padding-top: 29px;
+		padding-left: 30px;
+		background-color: #32344d;
+		width: 100%;
+		@media (max-width: $screen-xs-max) {
+			padding-left: 15px;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			background-image: url('../images/polosa.png');
+			background-repeat: repeat-x;
+			width: 99%;
+			left: 0;
+			right: 0;
+			top: 50%;
+			opacity: .25;
+			transform: translateY(-65%);
+			bottom: 0;
+			@media (max-width: $screen-xs-max) {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-90%);
+				bottom: 0;
+			}
+		}
+		h2{
+			font-size: 15px;
+			color: #fff;
+			font-family: 'OpenSansBold';
+			margin: 0;
+			position: absolute;
+			top: 27px;
+			width: 240px;
+			left: 0;
+			padding-left: 30px;
+			height: 20px;
+			background-color: #32344d;
+			@media (max-width: $screen-xs-max) {
+				font-size: 12px;
+				padding-left: 0;
+				top: 15px;
+				width: 180px;
+				padding-left: 15px;
+			}
+		}
+		p{
+			padding-top: 35px;
+			padding-bottom: 30px;
+			font-size: 15px;
+			color: #8b8b98;
+			font-family: 'OpenSansRegular';
+			@media (max-width: $screen-xs-max) {
+				font-size: 13px;
+				padding-top: 15px;
+				padding-right: 10px;
+			}
+		}
+	}
+	&__text2{
+		padding: 30px;
+		background-color: #32344d;
+		width: 100%;
+		@media (max-width: $screen-xs-max) {
+			padding-left: 15px;
+		}
+		p{
+			font-size: 15px;
+			color: #8b8b98;
+			font-family: 'OpenSansRegular';
+			@media (max-width: $screen-xs-max) {
+				font-size: 13px;
+				padding-top: 15px;
+				padding-right: 10px;
+			}
+		}
+	}
+	&__steps{
+		overflow: hidden;
+		padding-top: 12px;
+		padding-left: 30px;
+		padding-right: 30px;
+		text-align: center;
+		width: 100%;
+		@media (max-width: $screen-md-max) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		// &:after{
+		// 	content: '';
+		// 	border-bottom: 1px #ddd dashed;
+		// 	position: absolute;
+		// 	width: 82%;
+		// 	left: 130px;
+		// 	top: 50%;
+		// 	opacity: .20;
+		// }
+		&-step{
+			max-width: 420px;
+			display: inline-block;
+			padding-right: 50px;
+			padding-left: 50px;
+			padding-bottom: 30px;
+			position: relative;
+
+			@media (max-width: $screen-md-max) {
+				padding-left: 50px;
+				padding-right: 50px;
+				max-width: 320px;
+			}
+			@media (max-width: $screen-xs-max) {
+				padding-left: 0;
+				padding-right: 0;
+				max-width: 320px;
+			}
+			&:before{
+				content: '\f054';
+				font-family: 'FontAwesome';
+				position: absolute;
+				color: #ddd;
+				opacity: .20;
+				font-size: 40px;
+				top: 30%;
+				right: -20px;
+				@media (max-width: 1525px) { 
+					display: none;
+				}
+			}
+			
+			h3{
+				margin: 0;
+				padding-bottom: 23px;
+				font-size: 15px;
+				color: #fff;
+				font-family: 'OpenSansBold';
+				text-align: left;
+				@media (max-width: $screen-xs-max) {
+					text-align: center;
+					font-size: 12px;
+				}
+			}
+			p{
+				font-size: 13px;
+				color: #9798a5;
+				font-family: 'OpenSansRegular';
+				padding-top: 20px;
+				text-align: left;
+				@media (max-width: $screen-xs-max) {
+					text-align: center;
+				}
+			}
+			img{
+				width: 100%;
+				border-color: #383849;
+				border-width: 1px;
+				border-style: solid;
+				box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.2);
+				@media (max-width: $screen-xs-max) {
+					width: 250px;
+					border-color: rgb(255, 255, 255);
+					border-width: 1px;
+					border-style: solid;
+					box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.2);
+				}
+			}
+			span{
+				color: #fff;
+				font-family: 'OpenSansBold';
+			}
+			b{
+				color: #ffa030;
+			}
+			a{
+				color: #a4b3ff;
+			}
+		}
+		&-step:nth-child(3n+3){
+			&:before{
+				display: none;
+			}
+		}
+	}
+}

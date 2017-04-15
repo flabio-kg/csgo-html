@@ -1,0 +1,136 @@
+.rules{
+	padding: 30px;
+	background-color: #32344d;
+	@media (max-width: $screen-sm-max) {
+		padding: 15px;
+	}
+	&__text{
+		position: relative;
+		padding-top: 29px;
+		padding-left: 30px;
+		background-color: #32344d;
+		width: 100%;
+		@media (max-width: $screen-xs-max) {
+			padding-left: 15px;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			background-image: url('../images/polosa.png');
+			background-repeat: repeat-x;
+			width: 99%;
+			left: 0;
+			right: 0;
+			top: 50%;
+			opacity: .25;
+			transform: translateY(-65%);
+			bottom: 0;
+			@media (max-width: $screen-xs-max) {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-70%);
+				bottom: 0;
+			}
+			@media (max-width: $screen-xs-min) {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-80%);
+				bottom: 0;
+			}
+		}
+		h2{
+			font-size: 15px;
+			color: #fff;
+			font-family: 'OpenSansBold';
+			margin: 0;
+			position: absolute;
+			top: 18px;
+			width: 240px;
+			left: 0;
+			top: 0;
+			padding-top: 2px;
+			height: 21px;
+			background-color: #32344d;
+			@media (max-width: $screen-sm-max) {
+				font-size: 12px;
+				top: 0;
+				width: 190px;
+				padding-top: 4px;
+			}
+			@media (max-width: $screen-xs-max) {
+				font-size: 12px;
+				top: 0;
+				left: 0;
+				width: 190px;
+				padding-top: 2px;
+			}
+		}
+	}
+	&__blog{
+		span{
+			font-size: 15px;
+			color: #ffa030;
+			font-family: 'OpenSansRegular';
+			@media (max-width: $screen-sm-max) {
+				font-size: 12px;
+			}
+		}
+		h3{
+			font-size: 15px;
+			color: #fff;
+			font-family: 'OpenSansBold';
+			text-transform: uppercase;
+			@media (max-width: $screen-sm-max) {
+				font-size: 12px;
+			}
+		}
+		p{
+			font-size: 15px;
+			color: #c2c2ca;
+			font-family: 'OpenSansRegular';
+			a{
+				color: #a4b3ff;
+			}
+			@media (max-width: $screen-sm-max) {
+				font-size: 12px;
+			}
+		}
+		strong{
+			color: #fff;
+			@media (max-width: $screen-sm-max) {
+				font-size: 12px;
+			}
+		}
+		ul{
+			padding-left: 15px;
+			@media (max-width: $screen-sm-max) {
+				padding-left: 10px;
+			}
+			li{
+				list-style-type: none;
+				font-size: 15px;
+				color: #c2c2ca;
+				font-family: 'OpenSansRegular';
+				@media (max-width: $screen-sm-max) {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	&__blog2{
+		padding-bottom: 30px;
+		text-align: center;
+		@media (max-width: $screen-sm-max) {
+			padding-bottom: 15px;
+		}
+		a{
+			display: inline-block;
+			color: #ffa030;
+			font-size: 15px;
+			font-family: 'OpenSansRegular';
+			@media (max-width: $screen-sm-max) {
+				font-size: 12px;
+			}
+		}
+	}
+}
